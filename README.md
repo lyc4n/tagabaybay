@@ -22,7 +22,8 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+    irb(main):001:0> Tagabaybay::Transliterator.process("Pilipinas")
+    => "ᜉᜒᜎᜒᜉᜒᜈᜐ᜔"
 
 ## Development
 
