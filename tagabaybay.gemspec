@@ -9,7 +9,6 @@ Gem::Specification.new do |spec|
   spec.email         = ["canariasnorly@gmail.com"]
 
   spec.summary       = %q{This is a gem that allows you to transliterate from tagalog to baybayin}
-  spec.description   = %q{This is a gem that allows you to transliterate from tagalog to baybayin}
   spec.homepage      = "https://github.com/lyc4n/tagabaybay"
   spec.license       = "MIT"
 
