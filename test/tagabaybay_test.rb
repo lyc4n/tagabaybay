@@ -5,7 +5,12 @@ class TagabaybayTest < Minitest::Test
     refute_nil ::Tagabaybay::VERSION
   end
 
-  def test_it_does_something_useful
-    assert false
+  def test_it_converts_properly
+    assert_equal(Tagabaybay::Transliterator.process("Pilipino"), "ᜉᜒᜎᜒᜉᜒᜈᜓ", "Wrong output")
+    assert_equal(Tagabaybay::Transliterator.process("masa"), "ᜋᜐ", "Wrong output")
+    assert_equal(Tagabaybay::Transliterator.process("puso"), "ᜉᜓᜐᜓ", "Wrong output")
+    assert_equal(Tagabaybay::Transliterator.process("banga"), "ᜊᜅ", "Wrong output")
+    assert_equal(Tagabaybay::Transliterator.process("habang"), "ᜑᜊᜅ᜔", "Wrong output")
+    assert_equal(Tagabaybay::Transliterator.process("mahal kita"), "ᜋᜑᜎ᜔ ᜃᜒᜆ", "Wrong output")
   end
 end
