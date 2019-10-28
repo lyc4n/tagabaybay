@@ -87,6 +87,7 @@ module Tagabaybay
     }
 
     SINGLES = {
+      " " => " ",
       "a" => "ᜀ",
       "i" => "ᜁ",
       "e" => "ᜁ",
