@@ -135,7 +135,7 @@ module Tagabaybay
     private
 
     def find_match(text)
-      matched = Mapping::ALL.find do |matcher, baybayin|
+      matched = Mapping::ALL.find do |matcher, _baybayin|
         Regexp.new("^#{matcher}") =~ text
       end
       raise "Unable to match mapping for #{text}" unless matched
