@@ -87,7 +87,6 @@ module Tagabaybay
     }
 
     SINGLES = {
-      " " => " ",
       "a" => "ᜀ",
       "i" => "ᜁ",
       "e" => "ᜁ",
@@ -138,8 +137,7 @@ module Tagabaybay
       matched = Mapping::ALL.find do |matcher, _baybayin|
         Regexp.new("^#{matcher}") =~ text
       end
-      raise "Unable to match mapping for #{text}" unless matched
-      matched
+      matched || [text[0], text[0]]
     end
   end
 end
