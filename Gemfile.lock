@@ -8,7 +8,7 @@ GEM
   specs:
     gem-release (2.1.1)
     minitest (5.12.2)
-    rake (10.5.0)
+    rake (13.0.1)
 
 PLATFORMS
   ruby
@@ -17,7 +17,7 @@ DEPENDENCIES
   bundler (~> 2.0)
   gem-release
   minitest (~> 5.0)
-  rake (~> 10.0)
+  rake (~> 13.0)
   tagabaybay!
 
 BUNDLED WITH
